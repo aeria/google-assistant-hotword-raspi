@@ -25,12 +25,14 @@ Simple Google Assistant with hotword activation from Snowboy setup for my Pi Zer
         env/bin/pip install pip setuptools --upgrade
         source env/bin/activate
     ```
+    
   * Install dependencies
     `sudo apt-get install portaudio19-dev libffi-dev libssl-dev`
   * Install Google Assistant SDK + Samples
     ` python -m pip install google-assistant-sdk[samples]`
   * Get credentials
-    `python -m googlesamples.assistant.auth_helpers --client-secrets /home/pi/client_secret_XXXX.json`
+    `pip install --upgrade google-auth-oauthlib[tool]`
+    `google-oauthlib-tool --client-secrets path/to/client_secret_XXXXX.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless`
   * Test using the sample
     `python -m googlesamples.assistant`
     Issue commands after pressing `enter` and if you did all the steps above Google Assistant should respond.
