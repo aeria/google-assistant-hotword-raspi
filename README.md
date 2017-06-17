@@ -9,7 +9,7 @@ Simple Google Assistant with hotword activation from Snowboy setup for my Pi Zer
   * [Configure and Test the Audio](https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/configure-audio)
   * Setup virtual environment
     ```
-    -   (Recommended) For Python 3:
+    -   (Broken) For Python 3:
     
         sudo apt-get update
         sudo apt-get install python3-dev python3-venv
